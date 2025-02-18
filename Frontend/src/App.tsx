@@ -1,7 +1,15 @@
+import { Button } from "./components/ui/button"
 
 const App = () => {
+
+  const handleClick = () =>{
+    alert('button clicked')
+  }
+
   return (
-    <div>Welcom to Dashboard</div>
+    <div className="text-center mt-60">
+      <Button onClick={handleClick} variant="destructive">click me</Button>
+    </div>
   )
 }
 
