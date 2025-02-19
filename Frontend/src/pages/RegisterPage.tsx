@@ -9,15 +9,24 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Link } from 'react-router-dom';
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
       <Card className="w-full max-w-sm shadow-lg rounded-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-semibold">Login</CardTitle>
+          <CardTitle className="text-2xl font-semibold">Sign Up</CardTitle>
         </CardHeader>
         <CardContent>
           <form className="space-y-4">
+            <div className="grid gap-2">
+              <Label htmlFor="name">Name</Label>
+              <Input 
+                id="name" 
+                type="text" 
+                placeholder="Enter your name" 
+                required 
+              />
+            </div>
             <div className="grid gap-2">
               <Label htmlFor="email">Email</Label>
               <Input 
@@ -36,14 +45,14 @@ const LoginPage = () => {
               />
             </div>
             <Button type="submit" className="w-full">
-              Login
+              Sign Up
             </Button>
           </form>
-          {/* Sign up link */}
+          {/* Login link */}
           <div className="mt-4 text-center text-sm">
-            Don't have an account?{" "}
-            <Link to={'/register'} className="text-blue-600 hover:underline">
-              Sign up
+            Already have an account?{" "}
+            <Link to={'/login'} className="text-blue-600 hover:underline">
+              Login
             </Link>
           </div>
         </CardContent>
@@ -52,4 +61,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
