@@ -52,7 +52,7 @@ const RegisterPage = () => {
                     <div className="grid gap-4">
                         <div className="grid gap-2">
                             <Label htmlFor="name">Name</Label>
-                            <Input ref={nameRef} id="name" placeholder="Max" required />
+                            <Input ref={nameRef} id="name" placeholder="Enter Your Name" required />
                         </div>
                         <div className="grid gap-2">
                             <Label htmlFor="email">Email</Label>
@@ -60,13 +60,13 @@ const RegisterPage = () => {
                                 ref={emailRef}
                                 id="email"
                                 type="email"
-                                placeholder="m@example.com"
+                                placeholder="Enter Your Email"
                                 required
                             />
                         </div>
                         <div className="grid gap-2">
                             <Label htmlFor="password">Password</Label>
-                            <Input ref={passwordRef} id="password" type="password" />
+                            <Input ref={passwordRef} id="password" type="password" required placeholder='Your Password'/>
                         </div>
 
                         <Button

@@ -61,13 +61,13 @@ const LoginPage = () => {
                             ref={emailRef}
                             id="email"
                             type="email"
-                            placeholder="m@example.com"
+                            placeholder="Enter Your Email"
                             required
                         />
                     </div>
                     <div className="grid gap-2">
                         <Label htmlFor="password">Password</Label>
-                        <Input ref={passwordRef} id="password" type="password" required />
+                        <Input ref={passwordRef} id="password" type="password" required placeholder='Your Password'/>
                     </div>
                 </CardContent>
                 <CardFooter>

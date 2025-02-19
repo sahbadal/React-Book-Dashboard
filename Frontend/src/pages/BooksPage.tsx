@@ -31,21 +31,34 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { getBooks } from '@/http/api';
+import { getBooks, deleteBook } from '@/http/api';
 import { Book } from '@/types';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { CirclePlus, MoreHorizontal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BooksPage = () => {
-    // todo: add loading spinner, and error message
-    // @ts-ignore
-
-    const { data, isLoading, isError } = useQuery({
+    const queryClient = useQueryClient();
+    
+    const { data } = useQuery({
         queryKey: ['books'],
         queryFn: getBooks,
-        staleTime: 10000, // in Milli-seconds
+        staleTime: 10000,
     });
+
+    const deleteMutation = useMutation({
+        mutationFn: deleteBook,
+        onSuccess: () => {
+            queryClient.invalidateQueries({ queryKey: ['books'] });
+        },
+    });
+    
+
+    const handleDelete = (bookId: string) => {
+        if (confirm('Are you sure you want to delete this book?')) {
+            deleteMutation.mutate(bookId);
+        }
+    };
 
     return (
         <div>
@@ -127,9 +140,8 @@ const BooksPage = () => {
                                                     </Button>
                                                 </DropdownMenuTrigger>
                                                 <DropdownMenuContent align="end">
-                                                    <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                                                    <DropdownMenuItem>Edit</DropdownMenuItem>
-                                                    <DropdownMenuItem>Delete</DropdownMenuItem>
+                                                    <DropdownMenuLabel>Action</DropdownMenuLabel>
+                                                    <DropdownMenuItem onClick={() => handleDelete(book._id)}>Delete</DropdownMenuItem>
                                                 </DropdownMenuContent>
                                             </DropdownMenu>
                                         </TableCell>

@@ -113,9 +113,9 @@ const HomePage = () => {
                                         <TableBody>
                                             <TableRow>
                                                 <TableCell>
-                                                    <div className="font-medium">Liam Johnson</div>
+                                                    <div className="font-medium">Aarav Sharma</div>
                                                     <div className="hidden text-sm text-muted-foreground md:inline">
-                                                        liam@example.com
+                                                        aarav.sharma@email.com
                                                     </div>
                                                 </TableCell>
                                                 <TableCell className="hidden xl:table-column">
@@ -135,9 +135,9 @@ const HomePage = () => {
                                             </TableRow>
                                             <TableRow>
                                                 <TableCell>
-                                                    <div className="font-medium">Olivia Smith</div>
+                                                    <div className="font-medium">Vivaan Patel</div>
                                                     <div className="hidden text-sm text-muted-foreground md:inline">
-                                                        olivia@example.com
+                                                        vivaan.patel@email.com
                                                     </div>
                                                 </TableCell>
                                                 <TableCell className="hidden xl:table-column">
@@ -157,9 +157,9 @@ const HomePage = () => {
                                             </TableRow>
                                             <TableRow>
                                                 <TableCell>
-                                                    <div className="font-medium">Noah Williams</div>
+                                                    <div className="font-medium">Kabir Verma</div>
                                                     <div className="hidden text-sm text-muted-foreground md:inline">
-                                                        noah@example.com
+                                                        kabir.verma@email.com
                                                     </div>
                                                 </TableCell>
                                                 <TableCell className="hidden xl:table-column">
@@ -179,9 +179,9 @@ const HomePage = () => {
                                             </TableRow>
                                             <TableRow>
                                                 <TableCell>
-                                                    <div className="font-medium">Emma Brown</div>
+                                                    <div className="font-medium">Aryan Mehta</div>
                                                     <div className="hidden text-sm text-muted-foreground md:inline">
-                                                        emma@example.com
+                                                        aryan.mehta@email.com
                                                     </div>
                                                 </TableCell>
                                                 <TableCell className="hidden xl:table-column">
@@ -201,9 +201,9 @@ const HomePage = () => {
                                             </TableRow>
                                             <TableRow>
                                                 <TableCell>
-                                                    <div className="font-medium">Liam Johnson</div>
+                                                    <div className="font-medium">Rohan Singh</div>
                                                     <div className="hidden text-sm text-muted-foreground md:inline">
-                                                        liam@example.com
+                                                        rohan.singh@email.com
                                                     </div>
                                                 </TableCell>
                                                 <TableCell className="hidden xl:table-column">
@@ -233,14 +233,14 @@ const HomePage = () => {
                                     <div className="flex items-center gap-4">
                                         <Avatar className="hidden h-9 w-9 sm:flex">
                                             <AvatarImage src="/avatars/01.png" alt="Avatar" />
-                                            <AvatarFallback>OM</AvatarFallback>
+                                            <AvatarFallback>DJ</AvatarFallback>
                                         </Avatar>
                                         <div className="grid gap-1">
                                             <p className="text-sm font-medium leading-none">
-                                                Olivia Martin
+                                                Devansh Joshi
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                olivia.martin@email.com
+                                                devansh.joshi@email.com
                                             </p>
                                         </div>
                                         <div className="ml-auto font-medium">+$1,999.00</div>
@@ -248,14 +248,14 @@ const HomePage = () => {
                                     <div className="flex items-center gap-4">
                                         <Avatar className="hidden h-9 w-9 sm:flex">
                                             <AvatarImage src="/avatars/02.png" alt="Avatar" />
-                                            <AvatarFallback>JL</AvatarFallback>
+                                            <AvatarFallback>IG</AvatarFallback>
                                         </Avatar>
                                         <div className="grid gap-1">
                                             <p className="text-sm font-medium leading-none">
-                                                Jackson Lee
+                                                Ishaan Gupta
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                jackson.lee@email.com
+                                                ishaan.gupta@email.com
                                             </p>
                                         </div>
                                         <div className="ml-auto font-medium">+$39.00</div>
@@ -263,14 +263,14 @@ const HomePage = () => {
                                     <div className="flex items-center gap-4">
                                         <Avatar className="hidden h-9 w-9 sm:flex">
                                             <AvatarImage src="/avatars/03.png" alt="Avatar" />
-                                            <AvatarFallback>IN</AvatarFallback>
+                                            <AvatarFallback>RN</AvatarFallback>
                                         </Avatar>
                                         <div className="grid gap-1">
                                             <p className="text-sm font-medium leading-none">
-                                                Isabella Nguyen
+                                                Reyansh Nair
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                isabella.nguyen@email.com
+                                                reyansh.nair@email.com
                                             </p>
                                         </div>
                                         <div className="ml-auto font-medium">+$299.00</div>
@@ -278,14 +278,14 @@ const HomePage = () => {
                                     <div className="flex items-center gap-4">
                                         <Avatar className="hidden h-9 w-9 sm:flex">
                                             <AvatarImage src="/avatars/04.png" alt="Avatar" />
-                                            <AvatarFallback>WK</AvatarFallback>
+                                            <AvatarFallback>AK</AvatarFallback>
                                         </Avatar>
                                         <div className="grid gap-1">
                                             <p className="text-sm font-medium leading-none">
-                                                William Kim
+                                                Advait Kumar
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                will@email.com
+                                                advait.kumar@email.com
                                             </p>
                                         </div>
                                         <div className="ml-auto font-medium">+$99.00</div>
@@ -293,14 +293,14 @@ const HomePage = () => {
                                     <div className="flex items-center gap-4">
                                         <Avatar className="hidden h-9 w-9 sm:flex">
                                             <AvatarImage src="/avatars/05.png" alt="Avatar" />
-                                            <AvatarFallback>SD</AvatarFallback>
+                                            <AvatarFallback>KM</AvatarFallback>
                                         </Avatar>
                                         <div className="grid gap-1">
                                             <p className="text-sm font-medium leading-none">
-                                                Sofia Davis
+                                                Krish Malhotra
                                             </p>
                                             <p className="text-sm text-muted-foreground">
-                                                sofia.davis@email.com
+                                                krish.malhotra@email.com
                                             </p>
                                         </div>
                                         <div className="ml-auto font-medium">+$39.00</div>
