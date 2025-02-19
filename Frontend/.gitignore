@@ -1,25 +1,55 @@
-# Logs
-logs
-*.log
+# Node.js dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs and debugging
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
+.vscode/
 
-node_modules
-dist
-dist-ssr
-*.local
-.env
+# Build output
+dist/
+build/
+.cache/
+out/
+*.cache
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# SWC cache
+.swc/
+
+# Editor files
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.iml
+
+# Mac system files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# ShadCN-related files (if any)
+.shadcn/
+
+# Public uploads (optional, if you don’t want to track uploaded images)
+public/uploads/
+uploads/
